@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voting Form</h1>
+        <form id="votingForm">
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber" required minlength="12" maxlength="12" pattern="\d{12}">
+
+            <fieldset>
+                <legend>President</legend>
+                <div class="candidate">
+                    <input type="radio" id="president1" name="president" value="Candidate 1" required>
+                    <label for="president1">
+                        <img src="https://example.com/candidate1.jpg" alt="Candidate 1">
+                        <span>Candidate 1 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="president2" name="president" value="Candidate 2">
+                    <label for="president2">
+                        <img src="https://example.com/candidate2.jpg" alt="Candidate 2">
+                        <span>Candidate 2 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="president3" name="president" value="Candidate 3">
+                    <label for="president3">
+                        <img src="https://example.com/candidate3.jpg" alt="Candidate 3">
+                        <span>Candidate 3 - Dept</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vice President</legend>
+                <div class="candidate">
+                    <input type="radio" id="vp1" name="vicePresident" value="Candidate 1" required>
+                    <label for="vp1">
+                        <img src="https://example.com/candidate1.jpg" alt="Candidate 1">
+                        <span>Candidate 1 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="vp2" name="vicePresident" value="Candidate 2">
+                    <label for="vp2">
+                        <img src="https://example.com/candidate2.jpg" alt="Candidate 2">
+                        <span>Candidate 2 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="vp3" name="vicePresident" value="Candidate 3">
+                    <label for="vp3">
+                        <img src="https://example.com/candidate3.jpg" alt="Candidate 3">
+                        <span>Candidate 3 - Dept</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Secretary</legend>
+                <div class="candidate">
+                    <input type="radio" id="sec1" name="secretary" value="Candidate 1" required>
+                    <label for="sec1">
+                        <img src="https://example.com/candidate1.jpg" alt="Candidate 1">
+                        <span>Candidate 1 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="sec2" name="secretary" value="Candidate 2">
+                    <label for="sec2">
+                        <img src="https://example.com/candidate2.jpg" alt="Candidate 2">
+                        <span>Candidate 2 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="sec3" name="secretary" value="Candidate 3">
+                    <label for="sec3">
+                        <img src="https://example.com/candidate3.jpg" alt="Candidate 3">
+                        <span>Candidate 3 - Dept</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Position 4</legend>
+                <div class="candidate">
+                    <input type="radio" id="pos4_1" name="position4" value="Candidate 1" required>
+                    <label for="pos4_1">
+                        <img src="https://example.com/candidate1.jpg" alt="Candidate 1">
+                        <span>Candidate 1 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="pos4_2" name="position4" value="Candidate 2">
+                    <label for="pos4_2">
+                        <img src="https://example.com/candidate2.jpg" alt="Candidate 2">
+                        <span>Candidate 2 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="pos4_3" name="position4" value="Candidate 3">
+                    <label for="pos4_3">
+                        <img src="https://example.com/candidate3.jpg" alt="Candidate 3">
+                        <span>Candidate 3 - Dept</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Position 5</legend>
+                <div class="candidate">
+                    <input type="radio" id="pos5_1" name="position5" value="Candidate 1" required>
+                    <label for="pos5_1">
+                        <img src="https://example.com/candidate1.jpg" alt="Candidate 1">
+                        <span>Candidate 1 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="pos5_2" name="position5" value="Candidate 2">
+                    <label for="pos5_2">
+                        <img src="https://example.com/candidate2.jpg" alt="Candidate 2">
+                        <span>Candidate 2 - Dept</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="pos5_3" name="position5" value="Candidate 3">
+                    <label for="pos5_3">
+                        <img src="https://example.com/candidate3.jpg" alt="Candidate 3">
+                        <span>Candidate 3 - Dept</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Vote</button>
+            <button type="reset">Reset</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
